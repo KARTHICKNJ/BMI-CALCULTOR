@@ -1,0 +1,105 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(0, 225, 255); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 3px 0px 45px 19px rgba(0,0,0,0.51);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2rem;
+    color: #343a40; /* Dark grey for a more neutral, professional look */
+    margin-bottom: 1.5rem;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ced4da; /* Light border for a subtle style */
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #495057; /* Dark grey focus border */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Subtle blue color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* BMI result styling */
+h4 {
+    font-size: 1.2rem;
+    color: #495057; /* Dark grey for results text */
+    margin-top: 1rem;
+}
+
+.text-success {
+    color: #ec0968; /* Retaining the green color for success */
+}
+
+.text-danger {
+    color: #dc3545; /* Red for error messages */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional adjustments for overall decent look */
+input[type="text"]::placeholder {
+    color: #6c757d; /* Subtle placeholder color */
+    opacity: 0.7;
+}
+
+.container {
+    border: 1px solid #e0e0e0; /* Light border for subtle emphasis */
+}
+
